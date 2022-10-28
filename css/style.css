@@ -23,3 +23,13 @@ body{
     background-color: black;
 }
 
+.display{
+    width: 248px;
+    height: 70px;
+    margin: 0 auto 20px auto;
+    border-radius: 8px;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+
+
