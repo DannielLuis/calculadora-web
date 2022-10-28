@@ -1,0 +1,25 @@
+/**/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: gray;
+}
+
+
+.calc{
+    width: 290px;
+    height: 430px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 20px 10px 0 10px;
+    background-color: black;
+}
+
