@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/funcoes.js"></script>
 </head>
 <body>
     <div class="calc">
-        <input id="disp" type="text" disabled="disabled" value="45">
+        <input id="display" type="text" disabled="disabled">
 
         <button class="btn" onclick="limpar()">AC</button>
         <button class="btn">+/-</button>
@@ -26,12 +27,10 @@
         <button class="btn">1</button>
         <button class="btn">2</button>
         <button class="btn">3</button>
-        <button class="btn">+</button>
+        <button class="btn" onclick="addNumber('+')">+</button>
         <button class="btn-zero">0</button>
         <button class="btn">.</button>
         <button class="btn">=</button>
     </div><!-- calc -->
-
-    <script src="js/funcoes.js"></script>
 </body>
 </html>
