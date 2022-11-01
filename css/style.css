@@ -1,4 +1,4 @@
-/**/
+/* Estilização da calculadora.*/
 *{
     margin: 0;
     padding: 0;
@@ -7,9 +7,6 @@
 
 html, body{
     height: 100%;
-}
-
-body{
     background-color: gray;
 }
 
@@ -26,33 +23,28 @@ body{
 input[type="text"]{
     width: 248px;
     height: 60px;
-    font-size: 30px;
+    font-size: 25px;
     color: white;
     text-align: right;
+    padding: 10px;
     margin: 0 auto 20px auto;
     border-radius: 8px;
     background-color: rgba(128, 128, 128, 0.5);
 }
 
-.btn{
+.btn, .btn-zero{
+    width: 47px;
     font-size: 25px;
     color: white;
-    text-shadow: 2px 2px 3px black;
-    width: 47px;
     height: 47px;
     margin: 7px;
     border-radius: 8px;
     background-color: gray;
+    text-shadow: 2px 2px 3px black;
 }
 
 .btn-zero{
-    font-size: 25px;
-    color: white;
-    text-shadow: 2px 2px 3px black;
     width: 110px;
-    height: 47px;
-    margin: 7px;
-    border-radius: 8px;
-    background-color: gray;
 }
 
+/* 58 linhas */
