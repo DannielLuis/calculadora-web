@@ -7,8 +7,44 @@
 
 html, body{
     height: 100%;
-    background-color: gray;
+    /*border: 1px solid red;
+    padding: 20px;*/
 }
+
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid blue;*/
+    background-color: rgb(20, 19, 19);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .calc{
     width: 290px;
