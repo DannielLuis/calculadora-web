@@ -7,8 +7,6 @@
 
 html, body{
     height: 100%;
-    /*border: 1px solid red;
-    padding: 20px;*/
 }
 
 .main{
@@ -17,26 +15,23 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: center;
-    /*border: 1px solid blue;*/
-    background-color: #2f2841;/*rgb(20, 19, 19)*/
+    background-color: #2f2841;
 }
 
 .calculadora{
     width: 300px;
     height: 430px;
     border-radius: 15px;
-    /*padding: 20px 10px 0 10px;*/
     padding: 0 1rem;
-    background-color: #f0ffffde;/*#000*/
-    /*text-align: center;*/
+    background-color: #f0ffffde;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
 input[type="text"]{
-    width: 100%;/*248px*/
-    height: 15%;/*60px*/
+    width: 100%;
+    height: 15%;
     font-size: 25px;
     color: white;
     text-align: right;
@@ -69,4 +64,4 @@ input[type="text"]{
     width: 110px;
 }
 
-/* 58 linhas */
+/* 72 linhas */
