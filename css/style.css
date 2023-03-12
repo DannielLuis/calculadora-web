@@ -64,6 +64,16 @@ input[type="text"]{
     cursor: pointer;
 }
 
+.cor_cinza{
+    background-color: rgba(50, 50, 50, 0.7);
+    border-color: rgba(50, 50, 50, 0.9);
+}
+
+.cor_azul{
+    background-color: rgba(0, 0, 255, 0.6);
+    border-color: rgba(0, 0, 255, 0.99);
+}
+
 .zero{
     width: 114px;
 }
