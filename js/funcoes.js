@@ -15,6 +15,10 @@ const btn8 = document.querySelector("[value='8']");
 const btn9 = document.querySelector("[value='9']");
 const btn0 = document.querySelector("[value='0']");
 
+const mais = document.querySelector("[value='+']");
+const menos = document.querySelector("[value='-']");
+const multiplica = document.querySelector("[value='X']");
+
 //console.log(btn);
 // Adicionar o numero clicado no display
 function addNumero(valor){
