@@ -21,7 +21,8 @@ const multiplica = document.querySelector("[value='X']");
 const iqual = document.querySelectorAll("button")[4];
 
 //console.log(iqual);
-let num1, num2, operador;
+let num, num1, num2, operador;
+var execut = false
 
 // Adicionar o numero clicado no display
 function addNumero(valor){
@@ -36,6 +37,10 @@ function addOperador(operad){
 
 function limpar(){
     document.getElementById('display').value=''
+    num1 = num
+    num2 = num
+    operador = num
+    execut = false
 }
 
 /*
