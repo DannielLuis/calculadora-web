@@ -21,9 +21,17 @@ const multiplica = document.querySelector("[value='X']");
 const iqual = document.querySelectorAll("button")[4];
 
 //console.log(iqual);
+let num1, num2, operador;
+
 // Adicionar o numero clicado no display
 function addNumero(valor){
     document.getElementById('display').value += valor
+    num1 = document.getElementById('display').value
+}
+
+function addOperador(operad){
+    operador = operad
+    document.getElementById('display').value += operad
 }
 
 function limpar(){
@@ -70,7 +78,12 @@ btn0.addEventListener("click", () => {
     addNumero(btn0.value);
 });
 
+mais.addEventListener("click", () => {
+    addOperador("+");
+});
 
 iqual.addEventListener("click", () => {
-    addNumero("0000");
+    //addNumero("0000");
+    console.log("O primeiro numero é "+num1)
+    console.log("Operador é "+operador)
 });
