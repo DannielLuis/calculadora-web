@@ -26,13 +26,19 @@ var execut = false
 
 // Adicionar o numero clicado no display
 function addNumero(valor){
-    document.getElementById('display').value += valor
-    num1 = document.getElementById('display').value
+    if(execut){
+        document.getElementById('display').value += valor
+        num2 = document.getElementById('display').value
+    }else{
+        document.getElementById('display').value += valor
+        num1 = document.getElementById('display').value
+    }
 }
 
 function addOperador(operad){
     operador = operad
     document.getElementById('display').value += operad
+    execut = true
 }
 
 function limpar(){
