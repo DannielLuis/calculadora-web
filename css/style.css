@@ -1,4 +1,18 @@
 /* Estilização da calculadora.*/
+
+:root{
+    /* background colors */
+    --bg: #2d2e32; /*Mais claro*/
+    --bg-2: #2f2841;
+
+    /* text colors */
+    --text-white-1: #ffffff;
+    --text-white-2: hsla(0, 0%, 100%, 1);
+    --text-verde: #29D882;
+    --text-verde-2: #00ff84;
+    --text-tertiary: #88949B;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -16,7 +30,7 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #2f2841;
+    background-color: var(--bg-2);
 }
 
 .calculadora{
@@ -108,15 +122,29 @@ input[type="text"]{
     border: 3px solid blue;
     text-align: center;
     padding: 15px;
+    position: relative;
 }
 .alert h2{
-    color: #fff;
+    color: var(--text-white-1);
     font-size: 2rem;
 }
 .alert p{
-    color: #fff;
+    color: var(--text-white-2);
     font-size: 1.2rem;
     margin: 20px;
+}
+
+.botao__fechar{
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    font-size: 1rem;
+    padding: .3rem 2rem;
+    cursor: pointer;
+    color: #000;
+    box-shadow: 0px 0px 8px var(--text-verde-2);
+    background-color: var(--text-verde);
+    border: none;
 }
 
 /* 72 linhas */
