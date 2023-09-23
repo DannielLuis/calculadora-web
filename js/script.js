@@ -1,9 +1,4 @@
 //
-/*
-window.onload = function(){
-    document.getElementById("display").value="45";
-}*/
-
 const btn1 = document.querySelector("[value='1']");
 const btn2 = document.querySelector("[value='2']");
 const btn3 = document.querySelector("[value='3']");
@@ -36,12 +31,6 @@ function addNumero(valor){
         num1 = document.getElementById('display').value
         num1 = parseInt(num1)
     }
-
-    //console.log(num1)
-    //console.log(typeof num1)
-    //console.log(num2)
-    //console.log(typeof num2)
-    //console.log(num3);
 }
 
 // Adiciona o operador no display
@@ -58,7 +47,6 @@ function resultado(){
     document.getElementById('display').value='';
     num1 = num1+num2;
     document.getElementById('display').value=num1;
-    //return result;
 };
 
 //Limpa o display
@@ -107,12 +95,10 @@ mais.addEventListener("click", () => {
 });
 
 iqual.addEventListener("click", () => {
-    //addNumero("0000");
     console.log("O primeiro numero é " + num1);
     console.log(typeof num1)
     console.log("Operador é " + operador);
     console.log("O segundo numero é " + num2);
     console.log(typeof num2)
-    //console.log("O resultado é " + resultado());
     resultado();
 });
