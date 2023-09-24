@@ -146,5 +146,8 @@ input[type="text"]{
     background-color: var(--text-verde);
     border: none;
 }
+.fechar{
+    display: none;
+}
 
 /* 72 linhas */

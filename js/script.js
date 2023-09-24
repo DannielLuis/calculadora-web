@@ -15,6 +15,10 @@ const menos = document.querySelector("[value='-']");
 const multiplica = document.querySelector("[value='X']");
 const iqual = document.querySelectorAll("button")[4];
 
+// Constantes da caixa de alerta
+const containerAlert = document.querySelector(".container__alert");
+const botaoFechar = document.getElementById("botao__fechar");
+
 //console.log(iqual);
 let num, num1, operador = 0;
 var result = 0;
@@ -101,4 +105,10 @@ iqual.addEventListener("click", () => {
     console.log("O segundo numero é " + num2);
     console.log(typeof num2)
     resultado();
+});
+
+// Evento do botão fechar caixa de alerta
+botaoFechar.addEventListener("click", () => {
+    containerAlert.classList.toggle("fechar");
+    //console.log("Testando btn")
 });
