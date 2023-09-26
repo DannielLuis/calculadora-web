@@ -134,6 +134,13 @@ input[type="text"]{
     margin: 20px;
 }
 
+.alerta h3, .alerta h4{
+    color: #fff;
+}
+.alerta span{
+    color: #fff;
+}
+
 .botao__fechar_alerta_1, .botao__fechar_alerta_2{
     position: absolute;
     right: 20px;
