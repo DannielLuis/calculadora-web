@@ -16,8 +16,8 @@ const multiplica = document.querySelector("[value='X']");
 const iqual = document.querySelectorAll("button")[4];
 
 // Constantes da caixa de alerta
-const containerAlert = document.querySelector(".container__alert");
-const botaoFechar = document.getElementById("botao__fechar");
+const containerAlerta1 = document.querySelector(".container__alerta__1");
+const botaoFecharAlerta1 = document.querySelector(".botao__fechar_alerta_1");
 
 //console.log(iqual);
 let num, num1, operador = 0;
@@ -108,7 +108,7 @@ iqual.addEventListener("click", () => {
 });
 
 // Evento do botão fechar caixa de alerta
-botaoFechar.addEventListener("click", () => {
-    containerAlert.classList.toggle("fechar");
+botaoFecharAlerta1.addEventListener("click", () => {
+    containerAlerta1.classList.toggle("fechar");
     //console.log("Testando btn")
 });

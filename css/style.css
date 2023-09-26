@@ -134,7 +134,7 @@ input[type="text"]{
     margin: 20px;
 }
 
-.botao__fechar1, .botao__fechar2{
+.botao__fechar_alerta_1, .botao__fechar_alerta_2{
     position: absolute;
     right: 20px;
     bottom: 15px;
