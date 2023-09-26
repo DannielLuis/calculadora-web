@@ -17,7 +17,9 @@ const iqual = document.querySelectorAll("button")[4];
 
 // Constantes da caixa de alerta
 const containerAlerta1 = document.querySelector(".container__alerta__1");
+const containerAlerta2 = document.querySelector(".container__alerta__2");
 const botaoFecharAlerta1 = document.querySelector(".botao__fechar_alerta_1");
+const botaoFecharAlerta2 = document.querySelector(".botao__fechar_alerta_2");
 
 //console.log(iqual);
 let num, num1, operador = 0;
@@ -48,9 +50,15 @@ function addOperador(operad){
 
 // Processa o resultado
 function resultado(){
-    document.getElementById('display').value='';
-    num1 = num1+num2;
-    document.getElementById('display').value=num1;
+    if(num1 == NaN || num1 == undefined || num1 == 0){
+        //console.log("A variavel num1 esta vazia!");
+        containerAlerta2.classList.toggle("fechar");
+    }else{
+        //console.log("A variavel num1 guarda o valor: " + num1);
+        document.getElementById('display').value='';
+        num1 = num1+num2;
+        document.getElementById('display').value=num1;
+    };
 };
 
 //Limpa o display
@@ -111,4 +119,8 @@ iqual.addEventListener("click", () => {
 botaoFecharAlerta1.addEventListener("click", () => {
     containerAlerta1.classList.toggle("fechar");
     //console.log("Testando btn")
+});
+
+botaoFecharAlerta2.addEventListener("click", () => {
+    containerAlerta2.classList.toggle("fechar");
 });
