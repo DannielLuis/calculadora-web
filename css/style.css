@@ -100,8 +100,8 @@ input[type="text"]{
 }
 
 
-/* ========== Alert ========== */
-.container__alert{
+/* ========== Alerta ========== */
+.container__alerta__1, .container__alerta__2{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -115,7 +115,7 @@ input[type="text"]{
     justify-content: center;
 }
 
-.alert{
+.container__alerta__1 .alerta, .container__alerta__2 .alerta{
     width: 600px;
     height: 300px;
     background-color: #2d2e32;
@@ -124,17 +124,17 @@ input[type="text"]{
     padding: 15px;
     position: relative;
 }
-.alert h2{
+.alerta h2{
     color: var(--text-white-1);
     font-size: 2rem;
 }
-.alert p{
+.alerta p{
     color: var(--text-white-2);
     font-size: 1.2rem;
     margin: 20px;
 }
 
-.botao__fechar{
+.botao__fechar1, .botao__fechar2{
     position: absolute;
     right: 20px;
     bottom: 15px;
@@ -146,8 +146,13 @@ input[type="text"]{
     background-color: var(--text-verde);
     border: none;
 }
+
 .fechar{
     display: none;
+}
+
+.teste{
+    display: flex;
 }
 
 /* 72 linhas */
