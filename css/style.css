@@ -1,4 +1,24 @@
 /* Estilização da calculadora.*/
+
+:root{
+    /* background colors */
+    --bg: #2d2e32;
+    --bg-2: #2f2841;
+    --bg-3: #414452;
+
+    /* Cor de fundo dos botoes */
+    --bg-botao-1: rgba(0, 0, 255, 0.6); /*Mais claro*/
+    --bg-botao-2: #29D882;
+    --bg-botao-3: #00ff84;
+
+    /* text colors */
+    --text-white-1: #ffffff;
+    --text-white-2: hsla(0, 0%, 100%, 1);
+    --text-verde: #29D882;
+    --text-verde-2: #00ff84;
+    --text-tertiary: #88949B;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +26,7 @@
 }
 
 html, body{
+    width: 100vw;
     height: 100%;
 }
 
@@ -15,7 +36,7 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: center;
-    /*background-color: #2f2841;*/
+    /*background-color: var(--bg-2);*/
     background-image: url("../fundo_preto.webp");
     background-repeat: no-repeat;
     background-position: center;
@@ -74,7 +95,7 @@ input[type="text"]{
 }
 
 .cor_azul{
-    background-color: rgba(0, 0, 255, 0.6);
+    background-color: var(--bg-botao-1);
     border-color: rgba(0, 0, 255, 0.99);
 }
 
@@ -86,6 +107,70 @@ input[type="text"]{
     border: none;
     cursor: default;
     opacity: .5;
+}
+
+
+/* ========== Alerta ========== */
+.container__alerta__1, .container__alerta__2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*background-color: #25262a;*/
+    /*opacity: 0.7;*/
+   /* border: 3px solid red;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__alerta__1 .alerta, .container__alerta__2 .alerta{
+    width: 600px;
+    height: 300px;
+    background-color: var(--bg);
+    border: 1.5px solid var(--bg-3);
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    box-shadow: 10px 10px 35px #000;
+}
+.alerta h2{
+    color: var(--text-white-1);
+    font-size: 2rem;
+}
+.alerta p{
+    color: var(--text-white-2);
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+.alerta h3, .alerta h4{
+    color: #fff;
+}
+.alerta span{
+    color: #fff;
+}
+
+.botao__fechar_alerta_1, .botao__fechar_alerta_2{
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    font-size: 1rem;
+    padding: .3rem 2rem;
+    cursor: pointer;
+    color: #000;
+    box-shadow: 0px 0px 8px var(--text-verde-2);
+    background-color: var(--text-verde);
+    border: none;
+}
+
+.fechar{
+    display: none;
+}
+
+.teste{
+    display: flex;
 }
 
 /* 72 linhas */
