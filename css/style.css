@@ -138,6 +138,9 @@ input[type="text"]{
     padding: 15px;
     position: relative;
     box-shadow: 10px 10px 35px #000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .alerta h2{
     color: var(--text-white-1);
@@ -152,8 +155,12 @@ input[type="text"]{
 .alerta h3, .alerta h4{
     color: #fff;
 }
+.alerta div{
+    display: flex;
+}
 .alerta span{
     color: #fff;
+    margin: 0 20px;
 }
 
 .botao__fechar_alerta_1,
