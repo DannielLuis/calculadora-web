@@ -68,6 +68,9 @@ function resultado(){
         //console.log("A variavel num1 esta vazia!");
         containerAlerta2.classList.toggle("fechar");
         limpar()
+    }else if(num2 == NaN || num2 == undefined || num2 == 0){
+        containerAlerta2.classList.toggle("fechar");
+        limpar()
     }else if(operador == "+"){
         //console.log("A variavel num1 guarda o valor: " + num1);
         document.getElementById('display').value='';
