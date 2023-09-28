@@ -1,5 +1,5 @@
 //
-const btn1 = document.querySelector("[value='1']");
+/*const btn1 = document.querySelector("[value='1']");
 const btn2 = document.querySelector("[value='2']");
 const btn3 = document.querySelector("[value='3']");
 const btn4 = document.querySelector("[value='4']");
@@ -8,7 +8,18 @@ const btn6 = document.querySelector("[value='6']");
 const btn7 = document.querySelector("[value='7']");
 const btn8 = document.querySelector("[value='8']");
 const btn9 = document.querySelector("[value='9']");
-const btn0 = document.querySelector("[value='0']");
+const btn0 = document.querySelector("[value='0']");*/
+
+// A nova constante que contem todos botões numericos
+const dataClick = document.querySelectorAll('[dataClick]');
+
+/*
+window.onload = function(){
+    console.log(dataClick.length);
+    console.log(typeof dataClick);
+    console.log(dataClick[0]);
+    console.log(dataClick[0].value);
+}*/
 
 const mais = document.querySelector("[value='+']");
 const menos = document.querySelector("[value='-']");
@@ -71,6 +82,19 @@ function limpar(){
     window.console.clear()
 }
 
+// Aqui são os novos eventos dos botões
+dataClick[0].addEventListener("click", () => { addNumero("7") });
+dataClick[1].addEventListener("click", () => { addNumero("8") });
+dataClick[2].addEventListener("click", () => { addNumero("9") });
+dataClick[3].addEventListener("click", () => { addNumero("4") });
+dataClick[4].addEventListener("click", () => { addNumero("5") });
+dataClick[5].addEventListener("click", () => { addNumero("6") });
+dataClick[6].addEventListener("click", () => { addNumero("1") });
+dataClick[7].addEventListener("click", () => { addNumero("2") });
+dataClick[8].addEventListener("click", () => { addNumero("3") });
+dataClick[9].addEventListener("click", () => { addNumero("0") });
+
+/*
 btn1.addEventListener("click", () => {
     addNumero(btn1.value);
 });
@@ -100,7 +124,7 @@ btn9.addEventListener("click", () => {
 });
 btn0.addEventListener("click", () => {
     addNumero(btn0.value);
-});
+});*/
 
 mais.addEventListener("click", () => {
     addOperador("+");
