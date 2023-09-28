@@ -67,10 +67,16 @@ function resultado(){
     if(num1 == NaN || num1 == undefined || num1 == 0){
         //console.log("A variavel num1 esta vazia!");
         containerAlerta2.classList.toggle("fechar");
-    }else{
+        limpar()
+    }else if(operador == "+"){
         //console.log("A variavel num1 guarda o valor: " + num1);
         document.getElementById('display').value='';
-        num1 = num1+num2;
+        num1 = num1 + num2;
+        document.getElementById('display').value=num1;
+    }else if(operador == "-"){
+        //alerta("O operador é -");
+        document.getElementById('display').value='';
+        num1 = num1 - num2;
         document.getElementById('display').value=num1;
     };
 };
@@ -142,8 +148,8 @@ mais.addEventListener("click", () => {
 });
 
 menos.addEventListener("click", () => {
-    //addOperador("+");
-    alerta("Testando botão de subtração")
+    addOperador("-");
+    //alerta("Testando botão de subtração")
 });
 
 iqual.addEventListener("click", () => {
