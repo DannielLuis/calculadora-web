@@ -32,6 +32,9 @@ const containerAlerta2 = document.querySelector(".container__alerta__2");
 const botaoFecharAlerta1 = document.querySelector(".botao__fechar_alerta_1");
 const botaoFecharAlerta2 = document.querySelector(".botao__fechar_alerta_2");
 
+const containerAlertaTestes = document.querySelector(".container__alerta__testes");
+const botaoFecharAlertaTestes = document.querySelector(".botao__fechar_alerta_testes");
+
 //console.log(iqual);
 let num, num1, operador = 0;
 var result = 0;
@@ -82,6 +85,14 @@ function limpar(){
     window.console.clear()
 }
 
+// Alerta de testes
+function alerta(msg){
+    const containerAlerta = document.querySelector("#testes .alerta p");
+    console.log(containerAlerta);
+    containerAlerta.innerHTML = `${msg}.`
+    containerAlertaTestes.classList.toggle("fechar");
+};
+
 // Aqui são os novos eventos dos botões
 dataClick[0].addEventListener("click", () => { addNumero("7") });
 dataClick[1].addEventListener("click", () => { addNumero("8") });
@@ -130,6 +141,11 @@ mais.addEventListener("click", () => {
     addOperador("+");
 });
 
+menos.addEventListener("click", () => {
+    //addOperador("+");
+    alerta("Testando botão de subtração")
+});
+
 iqual.addEventListener("click", () => {
     console.log("O primeiro numero é " + num1);
     console.log(typeof num1)
@@ -147,4 +163,8 @@ botaoFecharAlerta1.addEventListener("click", () => {
 
 botaoFecharAlerta2.addEventListener("click", () => {
     containerAlerta2.classList.toggle("fechar");
+});
+
+botaoFecharAlertaTestes.addEventListener("click", () => {
+    containerAlertaTestes.classList.toggle("fechar");
 });

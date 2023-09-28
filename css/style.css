@@ -111,7 +111,9 @@ input[type="text"]{
 
 
 /* ========== Alerta ========== */
-.container__alerta__1, .container__alerta__2{
+.container__alerta__1,
+.container__alerta__2,
+.container__alerta__testes{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -125,7 +127,9 @@ input[type="text"]{
     justify-content: center;
 }
 
-.container__alerta__1 .alerta, .container__alerta__2 .alerta{
+.container__alerta__1 .alerta,
+.container__alerta__2 .alerta,
+.container__alerta__testes .alerta{
     width: 600px;
     height: 300px;
     background-color: var(--bg);
@@ -152,7 +156,9 @@ input[type="text"]{
     color: #fff;
 }
 
-.botao__fechar_alerta_1, .botao__fechar_alerta_2{
+.botao__fechar_alerta_1,
+.botao__fechar_alerta_2,
+.botao__fechar_alerta_testes{
     position: absolute;
     right: 20px;
     bottom: 15px;
