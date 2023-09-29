@@ -81,6 +81,11 @@ function resultado(){
         document.getElementById('display').value='';
         num1 = num1 - num2;
         document.getElementById('display').value=num1;
+    }else if(operador == "x"){
+        //alerta("O operador é x");
+        document.getElementById('display').value='';
+        num1 = num1 * num2;
+        document.getElementById('display').value=num1;
     };
 };
 
@@ -153,6 +158,10 @@ mais.addEventListener("click", () => {
 menos.addEventListener("click", () => {
     addOperador("-");
     //alerta("Testando botão de subtração")
+});
+multiplica.addEventListener("click", () => {
+    addOperador("x");
+    //alerta("Testando botão de multiplica")
 });
 
 iqual.addEventListener("click", () => {
