@@ -59,7 +59,7 @@ function addOperador(operad){
     operador = operad
     document.getElementById('display').value += operad
     execut = true
-    console.log(operador)
+    //console.log(operador)
 }
 
 // Processa o resultado
@@ -92,7 +92,7 @@ function limpar(){
     num2 = 0
     operador = 0
     execut = false
-    window.console.clear()
+    //window.console.clear()
 }
 
 // Alerta de testes
@@ -152,11 +152,11 @@ menos.addEventListener("click", () => { addOperador("-") });
 multiplica.addEventListener("click", () => { addOperador("x") });
 
 iqual.addEventListener("click", () => {
-    console.log("O primeiro numero é " + num1);
-    console.log(typeof num1)
-    console.log("Operador é " + operador);
-    console.log("O segundo numero é " + num2);
-    console.log(typeof num2)
+    //console.log("O primeiro numero é " + num1);
+    //console.log(typeof num1)
+    //console.log("Operador é " + operador);
+    //console.log("O segundo numero é " + num2);
+    //console.log(typeof num2)
     resultado();
 });
 
