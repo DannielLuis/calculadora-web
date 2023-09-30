@@ -65,24 +65,20 @@ function addOperador(operad){
 // Processa o resultado
 function resultado(){
     if(num1 == NaN || num1 == undefined || num1 == 0){
-        //console.log("A variavel num1 esta vazia!");
         containerAlerta2.classList.toggle("fechar");
         limpar()
     }else if(num2 == NaN || num2 == undefined || num2 == 0){
         containerAlerta2.classList.toggle("fechar");
         limpar()
     }else if(operador == "+"){
-        //console.log("A variavel num1 guarda o valor: " + num1);
         document.getElementById('display').value='';
         num1 = num1 + num2;
         document.getElementById('display').value=num1;
     }else if(operador == "-"){
-        //alerta("O operador é -");
         document.getElementById('display').value='';
         num1 = num1 - num2;
         document.getElementById('display').value=num1;
     }else if(operador == "x"){
-        //alerta("O operador é x");
         document.getElementById('display').value='';
         num1 = num1 * num2;
         document.getElementById('display').value=num1;
@@ -151,18 +147,9 @@ btn0.addEventListener("click", () => {
     addNumero(btn0.value);
 });*/
 
-mais.addEventListener("click", () => {
-    addOperador("+");
-});
-
-menos.addEventListener("click", () => {
-    addOperador("-");
-    //alerta("Testando botão de subtração")
-});
-multiplica.addEventListener("click", () => {
-    addOperador("x");
-    //alerta("Testando botão de multiplica")
-});
+mais.addEventListener("click", () => { addOperador("+") });
+menos.addEventListener("click", () => { addOperador("-") });
+multiplica.addEventListener("click", () => { addOperador("x") });
 
 iqual.addEventListener("click", () => {
     console.log("O primeiro numero é " + num1);
@@ -176,7 +163,6 @@ iqual.addEventListener("click", () => {
 // Evento do botão fechar caixa de alerta
 botaoFecharAlerta1.addEventListener("click", () => {
     containerAlerta1.classList.toggle("fechar");
-    //console.log("Testando btn")
 });
 
 botaoFecharAlerta2.addEventListener("click", () => {
