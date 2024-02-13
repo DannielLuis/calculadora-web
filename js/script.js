@@ -172,3 +172,8 @@ botaoFecharAlerta2.addEventListener("click", () => {
 botaoFecharAlertaTestes.addEventListener("click", () => {
     containerAlertaTestes.classList.toggle("fechar");
 });
+
+
+setTimeout(() => {
+    containerAlerta1.classList.toggle("fechar");
+}, 2000);
